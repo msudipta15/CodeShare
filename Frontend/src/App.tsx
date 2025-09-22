@@ -29,10 +29,34 @@ function App() {
           </div>
           <div className="w-full flex justify-between mt-4">
             <div className="flex gap-3">
-              <select id="countries" className="pr-4">
-                <option selected>{theme}</option>
-                <option value="vs-dark">vs-dark</option>
-              </select>
+              <div className="relative  flex items-center">
+                <div className="relative inline-block">
+                  <select
+                    name="selectedFruit"
+                    className="px-4 pr-6 py-0.5 rounded-2xl bg-slate-400 appearance-none"
+                  >
+                    <option value="javascript">Javascript</option>
+                    <option value="html">HTML</option>
+                  </select>
+                  <span className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+                    <img src="src/assets/down arrow.svg" alt="" />
+                  </span>
+                </div>
+              </div>
+              <div className="relative  flex items-center">
+                <div className="relative inline-block">
+                  <select
+                    name="selectedFruit"
+                    className="px-4 pr-6 py-0.5 rounded-2xl bg-slate-400 appearance-none"
+                  >
+                    <option value="vs">Light</option>
+                    <option value="vs-dark">Dark</option>
+                  </select>
+                  <span className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+                    <img src="src/assets/down arrow.svg" alt="" />
+                  </span>
+                </div>
+              </div>
             </div>
 
             <button className=" bg-blue-600 text-white px-7 py-3 rounded-4xl flex gap-2 cursor-pointer">

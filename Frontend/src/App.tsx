@@ -1,7 +1,9 @@
+import { useState } from "react";
 import "./App.css";
 import { Editor } from "@monaco-editor/react";
 
 function App() {
+  const [theme, settheme] = useState("vs");
   return (
     <div className="w-full font-[Outfit] min-h-screen bg-blue-600 text-[#121826] bg-[url('src/assets/Hero-Background-notecode.svg')] bg-cover bg-center">
       <div className="text-center p-6">
@@ -23,9 +25,14 @@ function App() {
          "
         >
           <div className="h-[600px]">
-            <Editor />
+            <Editor language="html" theme="vs" options={{ fontSize: 16 }} />
           </div>
-          <div className="w-full flex justify-end mt-4">
+          <div className="w-full flex justify-between mt-4">
+            <div className="flex">
+              <button>language</button>
+              <button>theme</button>
+            </div>
+
             <button className=" bg-blue-600 text-white px-7 py-3 rounded-4xl flex gap-2 cursor-pointer">
               <img src="src/assets/Share.svg" />
 

@@ -25,7 +25,7 @@ function App() {
          "
         >
           <div className="h-[600px]">
-            <Editor language="html" theme="vs" options={{ fontSize: 16 }} />
+            <Editor language="css" theme="vs" options={{ fontSize: 16 }} />
           </div>
           <div className="w-full flex justify-between mt-4">
             <div className="flex gap-3">
@@ -37,6 +37,8 @@ function App() {
                   >
                     <option value="javascript">Javascript</option>
                     <option value="html">HTML</option>
+                    <option value="python">Python</option>
+                    <option value="css">CSS</option>
                   </select>
                   <span className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
                     <img src="src/assets/down arrow.svg" alt="" />

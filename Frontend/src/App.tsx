@@ -28,9 +28,11 @@ function App() {
             <Editor language="html" theme="vs" options={{ fontSize: 16 }} />
           </div>
           <div className="w-full flex justify-between mt-4">
-            <div className="flex">
-              <button>language</button>
-              <button>theme</button>
+            <div className="flex gap-3">
+              <select id="countries" className="pr-4">
+                <option selected>{theme}</option>
+                <option value="vs-dark">vs-dark</option>
+              </select>
             </div>
 
             <button className=" bg-blue-600 text-white px-7 py-3 rounded-4xl flex gap-2 cursor-pointer">

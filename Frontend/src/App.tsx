@@ -6,9 +6,9 @@ function App() {
   const [theme, settheme] = useState("vs");
   const [language, setlanguage] = useState("javascript");
   return (
-    <div className="w-full font-[Outfit] min-h-screen bg-blue-600 text-[#121826] bg-[url('src/assets/Hero-Background-notecode.svg')] bg-cover bg-center">
+    <div className="w-full font-[Outfit] min-h-screen h-full pb-10 bg-blue-600 text-[#121826] bg-[url('src/assets/Hero-Background-notecode.svg')] bg-cover bg-center">
       <div className="text-center p-6">
-        <div className="mb-8 pr-4">
+        <div className="mb-4 pr-4">
           <img
             src="src/assets/NoteCodeLogo.svg"
             width={150}
@@ -20,13 +20,13 @@ function App() {
           <p className="text-4xl ">Your Code Easily</p>
         </div>
       </div>
-      <div className="flex justify-center w-full h-[720px]   ">
+      <div className="flex justify-center w-full h-[730px]   ">
         <div
           className={` w-full mx-6 sm:w-4xl rounded-xl p-8 ${
             theme === "vs" ? "bg-white" : "bg-[#1e1e1e]"
           } `}
         >
-          <div className="h-[600px]">
+          <div className="h-[620px]">
             <Editor
               language={language}
               theme={theme}

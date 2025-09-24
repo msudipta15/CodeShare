@@ -27,13 +27,13 @@ function App() {
           <div className="h-[600px]">
             <Editor language="css" theme="vs" options={{ fontSize: 16 }} />
           </div>
-          <div className="w-full flex justify-between mt-4">
+          <div className="w-full flex justify-between mt-4 ">
             <div className="flex gap-3">
-              <div className="relative  flex items-center">
-                <div className="relative inline-block">
+              <div className="relative  flex items-baseline-last">
+                <div className="relative inline-block ">
                   <select
                     name="selectedFruit"
-                    className="px-4 pr-6 py-0.5 rounded-2xl bg-slate-400 appearance-none"
+                    className="px-4 pr-6 py-0.5 rounded-2xl bg-[#CED6E1] appearance-none"
                   >
                     <option value="javascript">Javascript</option>
                     <option value="html">HTML</option>
@@ -45,11 +45,11 @@ function App() {
                   </span>
                 </div>
               </div>
-              <div className="relative  flex items-center">
+              <div className="relative  flex items-baseline-last">
                 <div className="relative inline-block">
                   <select
                     name="selectedFruit"
-                    className="px-4 pr-6 py-0.5 rounded-2xl bg-slate-400 appearance-none"
+                    className="px-4 pr-6 py-0.5 rounded-2xl bg-[#CED6E1] appearance-none"
                   >
                     <option value="vs">Light</option>
                     <option value="vs-dark">Dark</option>
@@ -61,11 +61,13 @@ function App() {
               </div>
             </div>
 
-            <button className=" bg-blue-600 text-white px-7 py-3 rounded-4xl flex gap-2 cursor-pointer">
-              <img src="src/assets/Share.svg" />
+            <div>
+              <button className=" bg-blue-600 text-white px-7 py-3 rounded-4xl flex gap-2 cursor-pointer">
+                <img src="src/assets/Share.svg" />
 
-              <span>Share</span>
-            </button>
+                <span>Share</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>

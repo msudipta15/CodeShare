@@ -5,6 +5,8 @@ import { Editor } from "@monaco-editor/react";
 function App() {
   const [theme, settheme] = useState("vs");
   const [language, setlanguage] = useState("javascript");
+  const [code, setcode] = useState("");
+
   return (
     <div className="w-full font-[Outfit] min-h-screen h-full pb-10 bg-blue-600 text-[#121826] bg-[url('src/assets/Hero-Background-notecode.svg')] bg-cover bg-center">
       <div className="text-center p-6">
@@ -31,6 +33,7 @@ function App() {
               language={language}
               theme={theme}
               options={{ fontSize: 16 }}
+              onChange={(code) => setcode(code || "")}
             />
           </div>
           <div className="w-full flex justify-between font-light mt-4 ">

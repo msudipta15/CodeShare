@@ -4,6 +4,7 @@ import { Editor } from "@monaco-editor/react";
 
 function App() {
   const [theme, settheme] = useState("vs");
+  const [language, setlanguage] = useState("javascript");
   return (
     <div className="w-full font-[Outfit] min-h-screen bg-blue-600 text-[#121826] bg-[url('src/assets/Hero-Background-notecode.svg')] bg-cover bg-center">
       <div className="text-center p-6">
@@ -21,19 +22,24 @@ function App() {
       </div>
       <div className="flex justify-center w-full h-[720px]   ">
         <div
-          className=" w-full mx-6 sm:w-4xl bg-white rounded-xl p-6 px-8
+          className=" w-full mx-6 sm:w-4xl bg-white rounded-xl p-8 
          "
         >
           <div className="h-[600px]">
-            <Editor language="css" theme="vs" options={{ fontSize: 16 }} />
+            <Editor
+              language={language}
+              theme={theme}
+              options={{ fontSize: 16 }}
+            />
           </div>
           <div className="w-full flex justify-between mt-4 ">
             <div className="flex gap-3">
               <div className="relative  flex items-baseline-last">
                 <div className="relative inline-block ">
                   <select
-                    name="selectedFruit"
+                    name="selectedLanguage"
                     className="px-4 pr-6 py-0.5 rounded-2xl bg-[#CED6E1] appearance-none"
+                    onChange={(e) => setlanguage(e.target.value)}
                   >
                     <option value="javascript">Javascript</option>
                     <option value="html">HTML</option>
@@ -50,6 +56,7 @@ function App() {
                   <select
                     name="selectedFruit"
                     className="px-4 pr-6 py-0.5 rounded-2xl bg-[#CED6E1] appearance-none"
+                    onChange={(e) => settheme(e.target.value)}
                   >
                     <option value="vs">Light</option>
                     <option value="vs-dark">Dark</option>

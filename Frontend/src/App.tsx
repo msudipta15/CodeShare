@@ -33,7 +33,7 @@ function App() {
               options={{ fontSize: 16 }}
             />
           </div>
-          <div className="w-full flex justify-between mt-4 ">
+          <div className="w-full flex justify-between font-light mt-4 ">
             <div className="flex gap-3">
               <div className="relative  flex items-baseline-last">
                 <div className="relative inline-block ">
@@ -70,7 +70,7 @@ function App() {
             </div>
 
             <div>
-              <button className=" bg-blue-600 text-white px-7 py-3 rounded-4xl flex gap-2 cursor-pointer">
+              <button className=" bg-blue-600 hover:bg-blue-700 text-white px-7 py-3 rounded-4xl flex gap-2 cursor-pointer">
                 <img src="src/assets/Share.svg" />
 
                 <span>Share</span>

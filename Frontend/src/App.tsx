@@ -22,8 +22,9 @@ function App() {
       </div>
       <div className="flex justify-center w-full h-[720px]   ">
         <div
-          className=" w-full mx-6 sm:w-4xl bg-white rounded-xl p-8 
-         "
+          className={` w-full mx-6 sm:w-4xl rounded-xl p-8 ${
+            theme === "vs" ? "bg-white" : "bg-[#121826]"
+          } `}
         >
           <div className="h-[600px]">
             <Editor
